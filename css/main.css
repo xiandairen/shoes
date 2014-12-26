@@ -6,4 +6,44 @@
 	overflow: hidden;
 }
 
-#background{position: absolute;}
+/*左侧导航*/
+.side-left{
+	position: fixed;
+	top:0;
+	left: 0;
+	width:108px;
+	height: 100%;
+	background-color:#000000;  
+}
+.side-left .logo{
+	width: 108px;
+	height: 50px;
+	overflow: hidden;
+	background: url("../images/nav-ico.png") no-repeat top left;
+}
+.side-left .nav-trigger{
+	text-align: center;
+	line-height: 26px;
+	display: inline-block;	
+	width: 108px;
+	height: 26px;	
+	position: absolute;
+	left: 0;
+}
+
+.side-left .look-num{
+	width: 108px;
+	height: 108px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.side-left .look-num img{
+    margin: 0 auto;
+}
+.side-left .look-num span{
+	font-size: 16px;
+	color: #ffffff;
+}
+
