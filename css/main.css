@@ -5,6 +5,129 @@
 	z-index: -10;
 	overflow: hidden;
 }
+ #background{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+} 
+ul{
+	list-style:none;
+}
+/*左侧导航*/
+.side-left{
+	position: fixed;
+	top:0;
+	left: 0;
+	width:108px;
+	height: 100%;
+	background-color:#000000;  
+}
+.side-left .logo{
+	margin-top: 21px;
+	width: 108px;
+	height: 50px;
+	overflow: hidden;
+	background: url("../images/nav-ico.png") no-repeat top left;
+}
+.side-left .nav-trigger{
+	text-align: center;
+	line-height: 26px;
+	display: inline-block;	
+	width: 108px;
+	height: 26px;	
+	position: absolute;
+	left: 0;
+}
+
+.side-left .look-num{
+	width: 108px;
+	height: 108px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+/* 	background: red; */
+	padding-top: 14px;	
+	overflow: hidden;
+}
+.side-left .look-num img{
+	display: block;
+    margin: 0 auto 15px auto;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+    transition:all 1s ease;
+}
+.side-left .look-num img:hover{
+	-webkit-transform:translate(30px,-30px) scale(0.2);
+	-moz-transform:translate(30px,-30px) scale(0.2);
+	-o-transform:translate(30px,-30px) scale(0.2);
+	-ms-transform:translate(30px,-30px) scale(0.2);
+	ransform: translate(30px,-30px) scale(0.2);
+}
+
+.side-left .look-num span{
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/*作者*/
+.author{
+	position: fixed;
+	bottom: 0;
+	left:108px;
+	width: 242px;
+	min-height: 350px;	
+    background: url("../images/author-bg.jpg") repeat-y; 
+
+}
+.author .author-num{
+	margin-left: 73px;
+	margin-top: -41px;
+}
+.author .author-name{
+	margin-top:70px;
+	transition:all 1s ease;
+}
+.author .author-name:hover{
+	transform: scale(1.08)
+}
+
+
+
+/*主体内容*/
+.contenter{
+	position: absolute;
+	top: 0;
+	left:350px; 
+	box-shadow:-16px 0px 84px #545454;
+}
+.base-trunpage{display:block;width: 57px;height: 143px;overflow: hidden;cursor: pointer;}
+.prev{position:absolute;left:50px;background: url("../images/Rotation-ico.png") 0 0 no-repeat;z-index: 500;}
+.next{position:absolute;right:50px;background: url("../images/Rotation-ico.png") -57px 0 no-repeat;z-index:500}
+.contenter ul{display: none}
+.contenter .cover-box{
+	display: block;
+	position: relative;
+}
+.contenter .cover-box li{float: left;display: none;}
+/*.cover-base-s{display: block}
+.cover-base-h{display: none}*/
+
+.contenter ul li{float:left;}
+
+.topics-base{display: none}
+
+
+.fullBg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	overflow: hidden;
+}
 
 /*左侧导航*/
 .side-left{
